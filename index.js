@@ -24,11 +24,14 @@
 //get HTTP method
   var method = req.method.toLowerCase();
 
+//get the headers
+  var headers = req.headers;
+
 //send response
   res.end('Hello World\n');
 
 //log requested path
-  console.log('request received on path: '+trimmedPath+' with the method: '+method+' & with these query string parameters: ',queryStringObject);
+  console.log('request received with these headers',headers);
 
  });
 
