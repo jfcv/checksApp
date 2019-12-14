@@ -12,20 +12,23 @@
  var server = http.createServer(function(req,res){
 
 //get and parse the URL
-   var parsedUrl = url.parse(req.url,true);
+  var parsedUrl = url.parse(req.url,true);
 
 //get the path
-   var path = parsedUrl.pathname;
-   var trimmedPath = path.replace(/^\/+|\/+$/g,'');
+  var path = parsedUrl.pathname;
+  var trimmedPath = path.replace(/^\/+|\/+$/g,'');
+
+//get the query string as an object
+  var queryStringObject = parsedUrl.query;
 
 //get HTTP method
-   var method = req.method.toLowerCase();
+  var method = req.method.toLowerCase();
 
 //send response
-   res.end('Hello World\n');
+  res.end('Hello World\n');
 
 //log requested path
-   console.log('request received on path: '+trimmedPath+' with the method: '+method);
+  console.log('request received on path: '+trimmedPath+' with the method: '+method+' & with these query string parameters: ',queryStringObject);
 
  });
 
