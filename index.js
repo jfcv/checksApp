@@ -18,11 +18,14 @@
    var path = parsedUrl.pathname;
    var trimmedPath = path.replace(/^\/+|\/+$/g,'');
 
+//get HTTP method
+   var method = req.method.toLowerCase();
+
 //send response
    res.end('Hello World\n');
 
 //log requested path
-   console.log('request received on path: '+trimmedPath);
+   console.log('request received on path: '+trimmedPath+' with the method: '+method);
 
  });
 
