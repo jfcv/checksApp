@@ -14,8 +14,8 @@
  var _data = require('./lib/data');
 
 //testing
-_data.read('test','newFile',function(err,data){
-  console.log('this was the error:',err,'& this was the data:',data);
+_data.update('test','newFile',{'apples':'oranges'},function(err){
+  console.log('this was the error:',err);
 });
 
 //instantiate the HTTP server
