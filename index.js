@@ -14,6 +14,11 @@
  var handlers = require('./lib/handlers');
  var helpers = require('./lib/helpers');
 
+//Twilio API
+helpers.sendTwilioSms('3008264061','Cuando se va para New York!',function(err){
+  console.log('This was the error', err);
+});
+
 //instantiate the HTTP server
  var httpServer = http.createServer(function(req,res){
     unifiedServer(req,res);
