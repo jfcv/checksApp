@@ -16,47 +16,39 @@
     <link rel="stylesheet" type="text/css" href="public/app.css" />
 
   </head>
+   <body class="{body.class}">
+     <!-- Page Wrapper -->
+     <div class="wrapper">
+       <!-- Header -->
+       <div class="header">
+         <!-- Logo -->
+         <a class="logo" href="/">
+           <img src="public/logo.png" alt="Logo" />
+         </a>
+         <!-- Navigation -->
+         <ul class="menu">
+           <li>
+             <a href="/">Home</a>
+           </li>
+           <li class="loggedOut">
+             <a href="/account/create">Signup</a>
+           </li>
+           <li class="loggedOut">
+             <a href="/session/create">Login</a>
+           </li>
+           <li class="loggedIn">
+             <a href="/checks/all">Dashboard</a>
+           </li>
+           <li class="loggedIn">
+             <a href="/account/edit">Account Settings</a>
+           </li>
+           <li class="loggedIn">
+             <a href="#" id="logoutButton">Logout</a>
+           </li>
+         </ul>
+ 
+         <div class="clear"></div>
+       </div>
 
-  <body class="{body.class}">
-    <!-- page wrapper -->
-    <div class="wrapper">
-    <!-- header -->
-    <div class="header">
-      <!-- logo -->
-      <a class="logo" href="/">
-        <img src="public/logo.png" alt="Logo"/>
-      </a>
-      <!-- navigation -->
-      <ul class="menu">
-
-        <li>
-          <a href="/">Home</a>
-        </li>
-
-        <li>
-          <a class="loggedOut" href="/account/create">Signup</a>
-        </li>
-
-        <li>
-          <a class="loggedOut" href="/session/create">Login</a>
-        </li>
-
-        <li>
-          <a class="loggedIn" href="/checks/all">Dashboard</a>
-        </li>
-
-        <li>
-          <a class="loggedIn" href="/account/edit">Account Settings</a>
-        </li>
-
-        <li>
-          <a class="loggedIn" href="#">Logout</a>
-        </li>
-      </ul>
-
-
-
-    </div>
-
-    <!-- page-specific content -->
-    <div class="content">
+       <!-- Page-Specific Content -->
+       <div class="content">
