@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"jmrv86ssd21tduklhg7e","phone":"3008264061","protocol":"https","url":"google.com","method":"get","successCodes":[200,201,301,302],"timeoutSeconds":3,"state":"up","lastChecked":1579804114147}
+=======
+{"id":"jmrv86ssd21tduklhg7e","phone":"3008264061","protocol":"https","url":"google.com","method":"get","successCodes":[200,201,301,302],"timeoutSeconds":3,"state":"down","lastChecked":1579533780880}
+>>>>>>> c534ecae05712ab522c512da279ee152d2c2af7d
