@@ -66,7 +66,8 @@ Modules involved:
 
 ## Good practices
 * Modularity.
-* Git as a version control system.
+* **Git** as a version control system.
+* API Testing using **POSTMAN**.
 
 ## Author
 
